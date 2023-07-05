@@ -1,4 +1,4 @@
-<div class="row content-2 h-100 pt-4 pb-5" id="projects">
+<div class="row content content-2 h-100 pt-4 pb-5" id="projects">
     <div class="title-card mt-5 pb-2 text-center fw-bold fs-2">
         These are some of my projects:
     </div>
@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="col-sm-4">
-        <div class="card card-2 cursor-pointer mt-3 rounded">
+        <div class="card card-2 cursor-pointer mt-3">
             <div class="card-header">
                 <img class="img-fluid" src="{{asset('img/img2.png')}}" alt="Medium Clone"/>
             </div>
@@ -28,13 +28,15 @@
                 <img
                     class="img-fluid img-thumbnail"
                     src="{{asset('img/img3.png')}}"
-                    alt="Kitchen Menu"
+                    alt="Weather App"
                 />
             </div>
-            <div class="card-body text-center">Kitchen Menu</div>
+            <div class="card-body text-center">Weather App</div>
         </div>
     </div>
-    <div class="col-sm-4">
+</div>
+<div class="row content content-2 h-100" id="projects">
+<div class="col-sm-4">
         <div class="card card-4 mt-3 cursor-pointer rounded">
             <div class="card-header">
                 <img
@@ -52,11 +54,11 @@
                 <img
                     class="img-fluid img-thumbnail"
                     src="{{asset('img/img5.png')}}"
-                    alt="Technical Documentation Page"
+                    alt="Quiz App"
                 />
             </div>
             <div class="card-body text-center">
-                Technical Documentation Page
+                Quiz App
             </div>
         </div>
     </div>
@@ -65,18 +67,18 @@
             <div class="card-header">
                 <img
                     class="img-fluid img-thumbnail"
-                    src="{{asset('img/img6.png')}}"
-                    alt="Survey Form"
+                    src="{{asset('img/img6.jpeg')}}"
+                    alt="Filter Search App"
                 />
             </div>
-            <div class="card-body text-center">Survey Form</div>
+            <div class="card-body text-center">Filter Search App</div>
         </div>
     </div>
-    <div class="col-12 text-center pt-4 mt-4">
+    <div class="col-12 text-center pt-4 mt-2">
         <a
             href="https://github.com/doganenes"
             target="_blank"
-            class="btn btn-lg btn-danger card-button"
+            class="btn btn-lg btn-success card-button"
         >Show All <span class="">></span></a
         >
     </div>

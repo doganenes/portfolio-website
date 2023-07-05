@@ -2,31 +2,32 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Mail\ContactMail;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use mysql_xdevapi\Exception;
 
 class ContactController extends Controller
 {
-    public function contact()
+    public function index()
     {
         return view('contact');
     }
 
     public function sendEmail(Request $request)
     {
-        $details = [
-            'name' => $request->name,
-            'email' => $request->email,
-            'message' => $request->message
-        ];
-        try {
-            Mail::to('enesdogandigital@gmail.com')->send(new ContactMail($details));
+        $name = $request->input('name');
+        $email = $request->input('email');
+        $subject = $request->input('subject');
+        $message = $request->input('message');
 
+        try {
+            Mail::to('laraveltestt@gmail.com')->send(new ContactMail($name, $email, $subject, $message));
+
+            $request->session()->flash('message_sent', 'Your message has been sent successfully.');
         } catch (\Exception $e) {
-            dd($e);
+            $request->session()->flash('message_sent', 'An error occurred while sending the message: ' . $e->getMessage());
         }
-        return back()->with('message_sent()', 'Your message has been sent successfully!');
+
+        return redirect()->back();
     }
 }

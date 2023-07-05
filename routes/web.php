@@ -13,18 +13,10 @@ use App\Http\Controllers\ContactController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/contact', [ContactController::class, 'sendEmail'])->name('contact.send');
 
-Route::get('/projects', function () {
-    return view('projects');
-});
-
-Route::get('/contact', [\App\Http\Controllers\ContactController::class, 'contact'])->name('contact');
-Route::post('/send-message', [\App\Http\Controllers\ContactController::class, 'sendEmail'])->name('contact.send');
