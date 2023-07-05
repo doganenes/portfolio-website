@@ -93,8 +93,12 @@ nav {
     min-width: 100%;
 }
 
-.col-right{
-    margin-top: 50rem;
+.infoText {
+    margin-top: 25%;
+}
+
+.col-right .imageBox {
+    margin-top: 6rem;
 }
 
 .col .infoText {
@@ -130,8 +134,8 @@ nav {
 }
 
 .social .mediaDiv {
-    padding: 0 1rem;
-    font-size: 2.5rem;
+    padding: 0 1.5rem;
+    font-size: 3rem;
     transition: 0.5s ease-in-out;
 }
 
@@ -150,7 +154,7 @@ nav {
 /*content-2*/
 .title-card {
     padding-left: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-top: 0.2rem;
     letter-spacing: 0.1rem;
     font-weight: bold;
@@ -170,20 +174,24 @@ nav {
     background-color: #e1e1e2;
 }
 
-.card-button:hover {
-    transition: 0.6s ease-out;
-}
-
 .card-header img {
     width: 100%;
     max-height: 15vw !important;
     object-fit: cover !important;
 }
 
+.showAllBtn {
+    background-color: #D0D2DB !important;
+    transition: hover 0.5s ease-out;
+}
+
+.showAllBtn:hover {
+    background-color: #2d3748 !important;
+}
+
 /*content-3*/
 form {
     width: 100%;
-    /*max-width: 400px;*/
     margin: 0 auto;
     padding: 0 1rem;
 }

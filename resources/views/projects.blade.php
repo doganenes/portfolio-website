@@ -1,7 +1,7 @@
 <div class="row content content-2 h-100 pt-4 pb-5" id="projects">
-    <div class="title-card mt-5 pb-2 text-center fw-bold fs-2">
-        These are some of my projects:
-    </div>
+    <h1 class="title-card mt-5 pb-2 text-center fw-bold fs-1">
+        Some of my projects:
+    </h1>
     <div class="col-sm-4">
         <div class="card card-1 cursor-pointer mt-3 rounded">
             <div class="card-header">
@@ -36,7 +36,7 @@
     </div>
 </div>
 <div class="row content content-2 h-100" id="projects">
-<div class="col-sm-4">
+    <div class="col-sm-4">
         <div class="card card-4 mt-3 cursor-pointer rounded">
             <div class="card-header">
                 <img
@@ -78,7 +78,7 @@
         <a
             href="https://github.com/doganenes"
             target="_blank"
-            class="btn btn-lg btn-success card-button"
+            class="btn btn-lg showAllBtn"
         >Show All <span class="">></span></a
         >
     </div>
