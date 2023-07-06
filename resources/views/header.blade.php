@@ -4,15 +4,15 @@
         >Enes Doğan</a
         >
     </div>
-    <nav class="mx-3 navTag">
+    <nav class="mx-3" id="navTag">
         <div class="nav-link">
-            <a class="text-dark" href="#about">About</a>
+            <a id="aboutLink" class="text-dark active nav-link__a" href="#about">About</a>
         </div>
         <div class="nav-link">
-            <a class="text-dark" href="#projects">Projects</a>
+            <a id="projectsLink" class="text-dark projectsLink nav-link__a" href="#projects">Projects</a>
         </div>
         <div class="nav-link">
-            <a class="text-dark" href="#contact">Contact</a>
+            <a id="contactLink" class="text-dark contactLink nav-link__a" href="#contact">Contact</a>
         </div>
     </nav>
     <div class="menu-btn">

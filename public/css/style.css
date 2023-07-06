@@ -9,7 +9,6 @@
 
 html {
     font-size: 15px;
-
 }
 
 body {
@@ -65,8 +64,17 @@ nav {
     transition: 0.4s ease-in-out;
 }
 
-.nav-link a:hover {
-    background-color: #ddd;
+.nav-link__a:hover {
+    background-color: #6f6fe3;
+    color: white;
+}
+
+.active {
+    background-color: #6f6fe3;
+}
+
+.name-title {
+    color: #6f6fe3;
 }
 
 .profile-image {
@@ -120,10 +128,6 @@ nav {
     width: 30vw;
     height: 45vh;
     border-radius: 50%;
-}
-
-.profile-image:hover {
-    transform: scale(1.15);
 }
 
 .social {
@@ -234,7 +238,6 @@ textarea {
     padding: 0.2rem;
 }
 
-
 footer {
     bottom: 0;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
@@ -333,6 +336,19 @@ footer {
 
     .infoText .info {
         font-size: 0.5rem;
+    }
+
+    .column-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-left {
+        order: 2;
+    }
+
+    .col-right {
+        order: 1;
     }
 
     table td {

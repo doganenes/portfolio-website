@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
@@ -21,7 +20,7 @@ class ContactMail extends Mailable
         $this->name = $name;
         $this->email = $email;
         $this->subject = $subject;
-        $this->message = htmlspecialchars($message);
+        $this->message = $message;
     }
 
     public function build()
@@ -30,6 +29,4 @@ class ContactMail extends Mailable
             ->subject('New form message')
             ->markdown('emails.contact-form');
     }
-
-
 }
