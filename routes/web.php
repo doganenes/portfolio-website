@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,5 +17,9 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/contact/send', [\App\Http\Controllers\FormController::class, 'store'])->name('contact.send');
+Route::post('/contact/send', [FormController::class, 'store'])->name('contact.send');
+Route::get('/', function () {
+    return view('index')->with('message_sent', session('message_sent'));
+})->name('index');
+
 
