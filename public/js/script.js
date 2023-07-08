@@ -75,13 +75,14 @@ window.addEventListener("scroll", function () {
         projectsLink.classList.add("active");
         aboutLink.classList.remove("active");
         contactLink.classList.remove("active");
-    } else if (scrollPosition >= contactSection.offsetTop) {
+    } else if (scrollPosition > contactSection.offsetTop) {
         contactLink.classList.add("active");
         aboutLink.classList.remove("active");
         projectsLink.classList.remove("active");
     } else {
+        contactLink.classList.remove("active");
         aboutLink.classList.remove("active");
         projectsLink.classList.remove("active");
-        contactLink.classList.remove("active");
     }
 });
+

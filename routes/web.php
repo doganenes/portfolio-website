@@ -17,6 +17,5 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-Route::post('/contact', [ContactController::class, 'sendEmail'])->name('contact.send');
+Route::post('/contact/send', [\App\Http\Controllers\FormController::class, 'store'])->name('contact.send');
 

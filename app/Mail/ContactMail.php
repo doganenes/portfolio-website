@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
@@ -15,6 +16,15 @@ class ContactMail extends Mailable
     public $subject;
     public $message;
 
+    /**
+     * Create a new message instance.
+     *
+     * @param string $name
+     * @param string $email
+     * @param string $subject
+     * @param string $message
+     * @return void
+     */
     public function __construct($name, $email, $subject, $message)
     {
         $this->name = $name;
@@ -23,10 +33,15 @@ class ContactMail extends Mailable
         $this->message = $message;
     }
 
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
     public function build()
     {
-        return $this->from($this->email)
-            ->subject('New form message')
-            ->markdown('emails.contact-form');
+        return $this->from($this->email, $this->name)
+            ->subject($this->subject)
+            ->view('emails.contact');
     }
 }

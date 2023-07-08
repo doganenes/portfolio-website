@@ -1,4 +1,4 @@
-<div class="row content content-3" id="contact">
+<div class="row content content-3  h-100 pt-4 pb-5" id="contact">
     <div class="col">
         <div class="title text-center text-dark fw-bold">Contact Me</div>
         <div>
@@ -9,6 +9,11 @@
             @endif
 
             <form action="{{ route('contact.send') }}" method="post" enctype="multipart/form-data">
+                @if (session('message_sent'))
+                    <div class="alert alert-success">
+                        {{ session('message_sent') }}
+                    </div>
+                @endif
                 @csrf
                 <table class="table table-borderless">
                     <tr>
@@ -41,12 +46,9 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td class="buttonTD mt-2">
+                        <td class="buttonTD">
                             <button class="btn btn-lg btn-success mx-1" type="submit">
                                 Send
-                            </button>
-                            <button class="btn btn-lg btn-danger mx-1" type="reset">
-                                Reset
                             </button>
                         </td>
                     </tr>

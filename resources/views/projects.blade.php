@@ -79,7 +79,7 @@
             href="https://github.com/doganenes"
             target="_blank"
             class="btn btn-lg showAllBtn"
-        >Show All <span class="">></span></a
+        >Show All <span>></span></a
         >
     </div>
 </div>
