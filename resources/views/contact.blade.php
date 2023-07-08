@@ -19,7 +19,7 @@
                     <tr>
                         <label for="email">
                             <td class="text-center fs-4">Email:</td>
-                        </label>f
+                        </label>
                         <td><input class="p-1" type="email" name="email" placeholder="Your email address.." required/>
                         </td>
                     </tr>
@@ -41,7 +41,7 @@
                     <tr>
                         <td></td>
                         <td class="buttonTD">
-                            <button class="btn btn-sm btn-primary mx-1" type="submit">
+                            <button class="btn btn-lg btn-primary mx-1" type="submit">
                                 Send
                             </button>
                         </td>
