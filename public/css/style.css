@@ -13,6 +13,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f2f0f0;
 }
 
 header {
@@ -80,10 +81,6 @@ nav {
 .profile-image {
     width: 20rem;
     height: 20rem;
-}
-
-.content {
-    background-color: #f2f0f0;
 }
 
 /*content-1*/
@@ -241,7 +238,6 @@ textarea {
 footer {
     bottom: 0;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-    background-color: #f2f0f0;
 }
 
 @media (max-width: 768px) {

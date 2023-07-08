@@ -20,7 +20,6 @@ class FormController extends Controller
         $formData->date = Carbon::now('Europe/Istanbul');
 
         $formData->save();
-//        $request->session()->put('message_sent', 'Your message sent correctly.');
         return redirect('/')->with('message_sent', 'Your message sent correctly.');
     }
 }
