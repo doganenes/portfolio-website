@@ -1,8 +1,6 @@
 <header>
     <div class="title">
-        <a class="text-decoration-none text-dark" href="/"
-        >Enes Doğan</a
-        >
+        <a class="text-decoration-none text-dark" href="/">Enes Doğan</a>
     </div>
     <nav class="mx-3" id="navTag">
         <div class="nav-link">

@@ -57,7 +57,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12 text-center pt-4 mt-2">
+        <div class="col-12 text-center pt-2 mt-2">
             <a href="https://github.com/doganenes" target="_blank" class="btn btn-lg showAllBtn">Show All
                 <span>></span></a>
         </div>
