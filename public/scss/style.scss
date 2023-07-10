@@ -238,7 +238,7 @@ footer {
 
 @media (max-width: 768px) {
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .menu-btn {
@@ -339,6 +339,7 @@ footer {
             font-size: 1.7rem;
         }
     }
+
     .column-1 {
         display: flex;
         flex-direction: column;
@@ -361,10 +362,7 @@ footer {
         }
 
         .col-right {
-            .imageBox {
-                display: flex;
-                justify-content: center;
-            }
+            order: 1;
 
             .profile-image {
                 min-width: 30vw;
@@ -372,19 +370,17 @@ footer {
                 border-radius: 50%;
             }
         }
-
     }
 
     .col-left {
         order: 2;
     }
-    .col-right {
-        order: 1;
-    }
+
     .card {
         height: 12rem;
         margin: 1rem 0;
     }
+
     table {
         td {
             font-size: 1.15rem;
@@ -392,6 +388,7 @@ footer {
             display: block;
         }
     }
+
     .title-card {
         font-size: 1.78rem;
     }
@@ -399,14 +396,5 @@ footer {
     .buttonTD {
         display: flex;
         justify-content: center;
-    }
-    .content-3 {
-        .col-left {
-            order: 2;
-        }
-
-        .col-right {
-            order: 1;
-        }
     }
 }

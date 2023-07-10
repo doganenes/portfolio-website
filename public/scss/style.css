@@ -212,7 +212,7 @@ footer {
 
 @media (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 13px;
   }
   .menu-btn {
     margin-top: 0.8rem;
@@ -313,9 +313,8 @@ footer {
   .column-1 .social .mediaDiv i {
     transition: 0.4s ease-out;
   }
-  .column-1 .col-right .imageBox {
-    display: flex;
-    justify-content: center;
+  .column-1 .col-right {
+    order: 1;
   }
   .column-1 .col-right .profile-image {
     min-width: 30vw;
@@ -324,9 +323,6 @@ footer {
   }
   .col-left {
     order: 2;
-  }
-  .col-right {
-    order: 1;
   }
   .card {
     height: 12rem;
@@ -343,12 +339,6 @@ footer {
   .buttonTD {
     display: flex;
     justify-content: center;
-  }
-  .content-3 .col-left {
-    order: 2;
-  }
-  .content-3 .col-right {
-    order: 1;
   }
 }
 
