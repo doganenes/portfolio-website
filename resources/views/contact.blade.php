@@ -43,7 +43,7 @@
                     <tr>
                         <td></td>
                         <td class="buttonTD">
-                            <button class="btn btn-lg btn-primary mx-1" type="submit">
+                            <button class="btn btn-lg btn-dark mx-1" type="submit">
                                 Send
                             </button>
                         </td>

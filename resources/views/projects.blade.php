@@ -16,7 +16,7 @@
                 <div class="card-header">
                     <img class="img-fluid img-thumbnail" src="{{ asset('img/img2.png') }}" alt="Medium Clone" />
                 </div>
-                <div class="card-body text-center">Medium Clone</div>
+                <div class="card-body text-center">Review Slider</div>
             </div>
         </div>
         <div class="col-sm-4">
