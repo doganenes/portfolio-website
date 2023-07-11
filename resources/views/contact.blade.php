@@ -2,6 +2,7 @@
     <div class="col">
         <div class="title text-center text-dark fw-bold">Contact Me</div>
         @if (session('message_sent'))
+            <br/>
             <div class="alert alert-success">
                 {{ session('message_sent') }}
             </div>
@@ -14,14 +15,16 @@
                         <label for="name">
                             <td class="text-center fs-4">Name:</td>
                         </label>
-                        <td><input class="p-1" type="text" name="name" placeholder="Your name.." required/>
+                        <td><input class="form-control form-control-lg" type="text" name="name"
+                                   placeholder="Your name.." required/>
                         </td>
                     </tr>
                     <tr>
                         <label for="email">
                             <td class="text-center fs-4">Email:</td>
                         </label>
-                        <td><input class="p-1" type="email" name="email" placeholder="Your email address.."
+                        <td><input class="form-control form-control-lg" type="email" name="email"
+                                   placeholder="Your email address.."
                                    required/>
                         </td>
                     </tr>
@@ -29,7 +32,8 @@
                         <label for="subject">
                             <td class="text-center fs-4">Subject:</td>
                         </label>
-                        <td><input class="p-1" type="text" name="subject" placeholder="Your subject.." required/>
+                        <td><input class="form-control form-control-lg" type="text" name="subject"
+                                   placeholder="Your subject.." required/>
                         </td>
                     </tr>
                     <tr>
@@ -37,14 +41,15 @@
                             <td class="text-center fs-4">Message:</td>
                         </label>
                         <td>
-                            <textarea cols="30" rows="5" name="message" placeholder="Your message.."
+                            <textarea class="form-control form-control-lg" cols="30" rows="5" name="message"
+                                      placeholder="Your message.."
                                       required></textarea>
                         </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td class="buttonTD">
-                            <button class="btn btn-lg btn-dark mx-1" type="submit">
+                            <button class="btn btn-dark btn-lg sendBtn" type="submit">
                                 Send
                             </button>
                         </td>

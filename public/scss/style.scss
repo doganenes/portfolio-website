@@ -57,6 +57,11 @@ nav {
     background-color: $color_3;
 }
 
+.activeMenu {
+    display: flex;
+    background-color: $color_7;
+}
+
 .nav-link {
     font-size: 1.3rem;
 
@@ -95,7 +100,6 @@ nav {
     min-width: 100%;
 
     .infoText {
-        margin-top: 2rem;
         text-align: center;
         line-height: 1.5rem;
 
@@ -111,8 +115,6 @@ nav {
 }
 
 .infoText {
-    margin-top: 25%;
-
     p {
         &:first-child {
             font-size: 1.6rem !important;
@@ -121,14 +123,10 @@ nav {
 }
 
 .col-right {
-    .imageBox {
-        margin: 14rem 5rem;
-    }
-
     .profile-image {
-        min-width: 25vw;
-        height: 42vh;
-        border-radius: 50%;
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
     }
 }
 
@@ -191,49 +189,46 @@ nav {
 
 .showAllBtn {
     background-color: $color_9 !important;
-    transition: hover 0.5s ease-out;
+    transition: 0.5s ease-out !important;
 
     &:hover {
         background-color: $color_5 !important;
     }
 }
 
-form {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-table {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    input {
-        width: 20rem;
-        border: 2px solid gray;
+.content-3 {
+    form {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
     }
-}
 
-td {
-    padding: 0.5rem 0;
-    margin: 0 0.5rem;
-    font-size: 1.4rem;
-
-    &:last-child {
+    table {
+        margin-top: 1.5rem;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-        .btn {
-            margin: 0 0.1rem;
+        .sendBtn {
+            display: block;
+            width: 100%;
         }
     }
-}
 
-textarea {
-    width: 20rem;
-    border: 2px solid gray;
-    padding: 0.2rem;
+    td {
+        padding: 0.5rem 0;
+        margin: 0 0.5rem;
+        font-size: 1.4rem;
+
+        &:last-child {
+            display: flex;
+
+            .btn {
+                margin: 0 0.1rem;
+            }
+        }
+    }
+
 }
 
 footer {
@@ -328,10 +323,6 @@ footer {
         }
     }
 
-    .active {
-        display: flex;
-    }
-
     header {
         .title {
             font-size: 1.7rem;
@@ -370,20 +361,22 @@ footer {
             margin-top: 1rem !important;
 
             .profile-image {
-                min-width: 32vw !important;
-                height: 40vh;
+                width: 50%;
+                height: 50%;
+                margin-top: 3rem;
+                padding-top: 3rem;
+                object-fit: cover;
             }
         }
     }
 
     .col-left {
         order: 2;
-        margin-top: 1rem !important;
     }
 
     .card {
-        min-height: 230px;
-        margin: 2rem 0;
+        min-height: 210px;
+        margin: 1.5rem 0;
     }
 
     table {
@@ -402,4 +395,5 @@ footer {
         display: flex;
         justify-content: center;
     }
+
 }

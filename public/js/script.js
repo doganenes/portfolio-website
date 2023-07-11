@@ -1,11 +1,9 @@
-let link1 = "https://todoapp-website.netlify.app/";
 let link2 = "review-slider-livedemo.netlify.app";
 let link3 = "https://github.com/doganenes/react-weather-app";
 let link4 = "https://personal-portfolio-website-project.netlify.app/";
 let link5 = "https://doganenes.github.io/quiz-app/";
 let link6 = "https://filter-search-app-livedemo.netlify.app/";
 
-let card1 = document.querySelector(".card-1");
 let card2 = document.querySelector(".card-2");
 let card3 = document.querySelector(".card-3");
 let card4 = document.querySelector(".card-4");
@@ -15,9 +13,6 @@ let card6 = document.querySelector(".card-6");
 const menuBtn = document.querySelector(".menu-btn");
 let menuOpen = false;
 
-card1.addEventListener("click", () => {
-    window.open(link1);
-});
 card2.addEventListener("click", () => {
     window.open(link2);
 });
@@ -47,7 +42,7 @@ menuBtn.addEventListener("click", () => {
 const navTag = document.getElementById("navTag");
 var navLink = navTag.getElementsByClassName("nav-link__a");
 menuBtn.addEventListener("click", () => {
-    navTag.classList.toggle("active");
+    navTag.classList.toggle("activeMenu");
 });
 
 for (var i = 0; i < navLink.length; i++) {
@@ -67,15 +62,15 @@ window.addEventListener("scroll", function () {
     var contactLink = document.getElementById("contactLink");
     var scrollPosition = window.scrollY;
 
-    if (scrollPosition >= aboutSection.offsetTop && scrollPosition < projectsSection.offsetTop) {
+    if (scrollPosition >= aboutSection.offsetTop - 100 && scrollPosition < projectsSection.offsetTop - 100) {
         aboutLink.classList.add("active");
         projectsLink.classList.remove("active");
         contactLink.classList.remove("active");
-    } else if (scrollPosition >= projectsSection.offsetTop && scrollPosition < contactSection.offsetTop) {
+    } else if (scrollPosition >= projectsSection.offsetTop - 100 && scrollPosition < contactSection.offsetTop - 100) {
         projectsLink.classList.add("active");
         aboutLink.classList.remove("active");
         contactLink.classList.remove("active");
-    } else if (scrollPosition > contactSection.offsetTop) {
+    } else if (scrollPosition > contactSection.offsetTop - 100) {
         contactLink.classList.add("active");
         aboutLink.classList.remove("active");
         projectsLink.classList.remove("active");
@@ -85,4 +80,5 @@ window.addEventListener("scroll", function () {
         projectsLink.classList.remove("active");
     }
 });
+
 

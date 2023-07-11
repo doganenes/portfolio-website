@@ -1,5 +1,5 @@
-<div id="about" class="row content content-1 pt-5 h-100">
-    <div class="col-left col-sm-5 mt-5 pt-5 px-5">
+<div id="about" class="row d-flex align-items-center justify-content-between content content-1 pt-5 h-100 scroll-check">
+    <div class="col-left d-flex flex-column justify-content-center col-sm-6 pt-5 px-5">
         <div class="infoText px-5">
             <h1 class="info text-center fw-bold">
                 Hi <span id="icon">👋</span> I am <span class="name-title">Enes Doğan</span>
@@ -32,9 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="col-right col-sm-7 px-5">
-        <div class="imageBox text-end">
-            <img class="profile-image" src="img/profile.jpg" alt="profile"/>
-        </div>
+    <div class="col-right d-flex justify-content-center col-sm-6">
+        <img class="profile-image rounded-circle mt-5" src="img/profile.jpg" alt="profile"/>
     </div>
 </div>

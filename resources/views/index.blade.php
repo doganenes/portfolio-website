@@ -20,7 +20,7 @@
 </head>
 
 <body>
-@include('header')
+    @include('header')
 <div class="container-fluid">
     @include('about')
     @include('projects')
@@ -29,5 +29,4 @@
 </div>
 <script src="{{ asset('js/script.js') }}"></script>
 </body>
-
 </html>
