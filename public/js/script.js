@@ -1,9 +1,9 @@
 let link1 = "https://todoapp-website.netlify.app/";
-let link2 = "https://medium-clone-bootstrap.vercel.app/";
-let link3 = "https://kitchen-menu-website.netlify.app/";
+let link2 = "review-slider-livedemo.netlify.app";
+let link3 = "https://github.com/doganenes/react-weather-app";
 let link4 = "https://personal-portfolio-website-project.netlify.app/";
 let link5 = "https://doganenes.github.io/quiz-app/";
-let link6 = "https://survey-form-project.vercel.app/";
+let link6 = "https://filter-search-app-livedemo.netlify.app/";
 
 let card1 = document.querySelector(".card-1");
 let card2 = document.querySelector(".card-2");

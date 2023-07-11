@@ -9,5 +9,5 @@
 
 ----
 
-# Portfolio Website
+# Portfolio Website - Laravel, MySQL, SCSS, Bootstrap 
 ![portfolio - website](https://github.com/doganenes/portfolio-website-laravel/assets/86846812/d00b2f4c-f11f-4047-9784-1fe08436f22a)

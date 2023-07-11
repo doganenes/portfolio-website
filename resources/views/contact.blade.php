@@ -14,7 +14,7 @@
                         <label for="name">
                             <td class="text-center fs-4">Name:</td>
                         </label>
-                        <td><input class="p-1" type="text" name="name" placeholder="Your name.." required />
+                        <td><input class="p-1" type="text" name="name" placeholder="Your name.." required/>
                         </td>
                     </tr>
                     <tr>
@@ -22,14 +22,14 @@
                             <td class="text-center fs-4">Email:</td>
                         </label>
                         <td><input class="p-1" type="email" name="email" placeholder="Your email address.."
-                                required />
+                                   required/>
                         </td>
                     </tr>
                     <tr>
                         <label for="subject">
                             <td class="text-center fs-4">Subject:</td>
                         </label>
-                        <td><input class="p-1" type="text" name="subject" placeholder="Your subject.." required />
+                        <td><input class="p-1" type="text" name="subject" placeholder="Your subject.." required/>
                         </td>
                     </tr>
                     <tr>
@@ -37,7 +37,8 @@
                             <td class="text-center fs-4">Message:</td>
                         </label>
                         <td>
-                            <textarea cols="30" rows="5" name="message" placeholder="Your message.." required></textarea>
+                            <textarea cols="30" rows="5" name="message" placeholder="Your message.."
+                                      required></textarea>
                         </td>
                     </tr>
                     <tr>

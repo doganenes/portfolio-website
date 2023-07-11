@@ -6,7 +6,7 @@
         <div class="col-sm-4">
             <div class="card card-1 cursor-pointer rounded">
                 <div class="card-header">
-                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img1.png') }}" alt="Todo App" />
+                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img1.png') }}" alt="Todo App"/>
                 </div>
                 <div class="card-body text-center">Todo App</div>
             </div>
@@ -14,7 +14,7 @@
         <div class="col-sm-4">
             <div class="card card-2 cursor-pointer">
                 <div class="card-header">
-                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img2.png') }}" alt="Medium Clone" />
+                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img2.png') }}" alt="Medium Clone"/>
                 </div>
                 <div class="card-body text-center">Review Slider</div>
             </div>
@@ -22,7 +22,7 @@
         <div class="col-sm-4">
             <div class="card card-3 cursor-pointer rounded">
                 <div class="card-header">
-                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img3.png') }}" alt="Weather App" />
+                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img3.png') }}" alt="Weather App"/>
                 </div>
                 <div class="card-body text-center">Weather App</div>
             </div>
@@ -32,7 +32,7 @@
         <div class="col-sm-4">
             <div class="card card-4 cursor-pointer rounded">
                 <div class="card-header">
-                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img4.png') }}" alt="Personal Portfolio" />
+                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img4.png') }}" alt="Personal Portfolio"/>
                 </div>
                 <div class="card-body text-center">Personal Portfolio</div>
             </div>
@@ -40,7 +40,7 @@
         <div class="col-sm-4">
             <div class="card card-5 cursor-pointer rounded">
                 <div class="card-header">
-                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img5.png') }}" alt="Quiz App" />
+                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img5.png') }}" alt="Quiz App"/>
                 </div>
                 <div class="card-body text-center">
                     Quiz App
@@ -50,7 +50,7 @@
         <div class="col-sm-4">
             <div class="card card-6 cursor-pointer">
                 <div class="card-header">
-                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img6.jpeg') }}" alt="Filter Search App" />
+                    <img class="img-fluid img-thumbnail" src="{{ asset('img/img6.jpeg') }}" alt="Filter Search App"/>
                 </div>
                 <div class="card-body text-center">Filter Search App</div>
             </div>

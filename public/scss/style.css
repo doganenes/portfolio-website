@@ -57,7 +57,7 @@ nav {
   font-size: 1.3rem;
 }
 .nav-link a {
-  color: black;
+  color: #000;
   text-decoration: none;
   letter-spacing: 0.6px;
   padding: 1rem;
@@ -67,7 +67,7 @@ nav {
 
 .nav-link__a:hover {
   background-color: #6f6fe3;
-  color: white;
+  color: #fff;
 }
 
 .name-title {
@@ -108,11 +108,11 @@ nav {
 }
 
 .col-right .imageBox {
-  margin: 10rem 5rem;
+  margin: 14rem 5rem;
 }
 .col-right .profile-image {
   min-width: 25vw;
-  height: 40vh;
+  height: 42vh;
   border-radius: 50%;
 }
 
@@ -133,6 +133,10 @@ nav {
 
 .fa-brands {
   color: #c1c5d2;
+}
+
+.fa-brands:hover {
+  color: #969ba9;
 }
 
 .title-card {
@@ -159,7 +163,8 @@ nav {
 
 .card-header img {
   width: 100%;
-  max-height: 15vw !important;
+  min-height: 210px !important;
+  max-height: 210px !important;
   object-fit: cover !important;
 }
 
@@ -168,7 +173,7 @@ nav {
   transition: hover 0.5s ease-out;
 }
 .showAllBtn:hover {
-  background-color: #2d3748 !important;
+  background-color: #969ba9 !important;
 }
 
 form {
@@ -270,7 +275,7 @@ footer {
   nav {
     display: none;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #f9f8fc;
     position: fixed;
     top: 0;
     right: -6rem;
@@ -315,18 +320,19 @@ footer {
   }
   .column-1 .col-right {
     order: 1;
+    margin-top: 1rem !important;
   }
   .column-1 .col-right .profile-image {
-    min-width: 30vw;
+    min-width: 32vw !important;
     height: 40vh;
-    border-radius: 50%;
   }
   .col-left {
     order: 2;
+    margin-top: 1rem !important;
   }
   .card {
-    height: 12rem;
-    margin: 1rem 0;
+    min-height: 230px;
+    margin: 2rem 0;
   }
   table td {
     font-size: 1.15rem;

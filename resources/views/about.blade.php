@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="col-right col-sm-7 pt-5">
+    <div class="col-right col-sm-7 px-5">
         <div class="imageBox text-end">
             <img class="profile-image" src="img/profile.jpg" alt="profile"/>
         </div>
