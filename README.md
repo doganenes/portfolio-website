@@ -15,13 +15,13 @@
 ![contact](https://github.com/doganenes/quiz-app/assets/86846812/8daf5da2-ef5e-4d2d-9755-91d27e758a75)
 
 
-## Features
-* This portfolio website was made with laravel. Portfolio website landing page is a project.
+# Features
+* This portfolio website was made with laravel. Portfolio website is a landing page project.
 * In the contact section of the project, the data received from the user is saved in the database.
 
 ![contacttest](https://github.com/doganenes/quiz-app/assets/86846812/81df416d-ed7c-4832-bfeb-fcb5a70a128d)
 ![textsend](https://github.com/doganenes/quiz-app/assets/86846812/bf12a08b-979f-47e7-89c4-65cd37cca2ea)
-In database, the id value is taken as the primary key as auto_increment. The user's name, email, subject and message data are retrieved. In addition, the time period when the contact form is submitted is also recorded in the database.
+* In database, the id value is taken as the primary key as auto_increment. The user's name, email, subject and message data are retrieved. In addition, the time period when the contact form is submitted is also recorded in the database.
 
 ![testmessagesql](https://github.com/doganenes/quiz-app/assets/86846812/ea5b9dfb-702c-49ec-ae8e-347d7cc63771)
 
