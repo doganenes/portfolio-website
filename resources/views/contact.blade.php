@@ -1,12 +1,6 @@
 <div id="contact" class="row content content-3  h-100 pt-4 pb-5">
     <div class="col">
         <div class="title text-center text-dark fw-bold">Contact Me</div>
-        @if (session('message_sent'))
-            <br/>
-            <div class="alert alert-success">
-                {{ session('message_sent') }}
-            </div>
-        @endif
         <div>
             <form action="{{ route('contact.send') }}" method="post" enctype="multipart/form-data">
                 @csrf
@@ -16,7 +10,7 @@
                             <td class="text-center fs-4">Name:</td>
                         </label>
                         <td><input class="form-control form-control-lg" type="text" name="name"
-                                   placeholder="Your name.." required/>
+                                placeholder="Your name.." required />
                         </td>
                     </tr>
                     <tr>
@@ -24,8 +18,7 @@
                             <td class="text-center fs-4">Email:</td>
                         </label>
                         <td><input class="form-control form-control-lg" type="email" name="email"
-                                   placeholder="Your email address.."
-                                   required/>
+                                placeholder="Your email address.." required />
                         </td>
                     </tr>
                     <tr>
@@ -33,7 +26,7 @@
                             <td class="text-center fs-4">Subject:</td>
                         </label>
                         <td><input class="form-control form-control-lg" type="text" name="subject"
-                                   placeholder="Your subject.." required/>
+                                placeholder="Your subject.." required />
                         </td>
                     </tr>
                     <tr>
@@ -41,9 +34,8 @@
                             <td class="text-center fs-4">Message:</td>
                         </label>
                         <td>
-                            <textarea class="form-control form-control-lg" cols="30" rows="5" name="message"
-                                      placeholder="Your message.."
-                                      required></textarea>
+                            <textarea class="form-control form-control-lg" cols="30" rows="5" name="message" placeholder="Your message.."
+                                required></textarea>
                         </td>
                     </tr>
                     <tr>
@@ -54,6 +46,12 @@
                             </button>
                         </td>
                     </tr>
+                    @if (session('message_sent'))
+                        <br />
+                        <div class="alert alert-success">
+                            {{ session('message_sent') }}
+                        </div>
+                    @endif
                 </table>
             </form>
         </div>

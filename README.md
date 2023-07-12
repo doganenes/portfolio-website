@@ -20,7 +20,7 @@
 * In the contact section of the project, the data received from the user is saved in the database.
 
 ![contacttest](https://github.com/doganenes/quiz-app/assets/86846812/81df416d-ed7c-4832-bfeb-fcb5a70a128d)
-![testsend](https://github.com/doganenes/quiz-app/assets/86846812/d7ee35f3-745e-47fd-94b2-31294ddac3a4)
+![textsend](https://github.com/doganenes/quiz-app/assets/86846812/bf12a08b-979f-47e7-89c4-65cd37cca2ea)
 In database, the id value is taken as the primary key as auto_increment. The user's name, email, subject and message data are retrieved. In addition, the time period when the contact form is submitted is also recorded in the database.
 
 ![testmessagesql](https://github.com/doganenes/quiz-app/assets/86846812/ea5b9dfb-702c-49ec-ae8e-347d7cc63771)
