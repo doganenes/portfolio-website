@@ -22,4 +22,4 @@ Route::get('/', function () {
     return view('index')->with('message_sent', session('message_sent'));
 })->name('index');
 
-
+Route::get('contact/sendmail',[\App\Http\Controllers\SendEmailController::class], 'send' );
