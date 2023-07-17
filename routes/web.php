@@ -13,6 +13,7 @@ use App\Http\Controllers\FormController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::get('/', function () {
     return view('index');
 });
@@ -21,5 +22,3 @@ Route::post('/contact/send', [FormController::class, 'store'])->name('contact.se
 Route::get('/', function () {
     return view('index')->with('message_sent', session('message_sent'));
 })->name('index');
-
-Route::get('contact/sendmail',[\App\Http\Controllers\SendEmailController::class], 'send' );

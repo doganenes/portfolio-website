@@ -18,8 +18,8 @@ class FormController extends Controller
         $formData->subject = $request->input('subject');
         $formData->message = $request->input('message');
         $formData->date = Carbon::now('Europe/Istanbul');
-
         $formData->save();
-        return redirect('/')->with('message_sent', 'Your message sent correctly.');
+
+        return redirect('/')->with('message_sent', 'Your message sent successfully.');
     }
 }

@@ -1,3 +1,4 @@
+let link1 = "https://github.com/doganenes/todo-app";
 let link2 = "review-slider-livedemo.netlify.app";
 let link3 = "https://github.com/doganenes/react-weather-app";
 let link4 = "https://personal-portfolio-website-project.netlify.app/";
@@ -62,11 +63,17 @@ window.addEventListener("scroll", function () {
     var contactLink = document.getElementById("contactLink");
     var scrollPosition = window.scrollY;
 
-    if (scrollPosition >= aboutSection.offsetTop - 100 && scrollPosition < projectsSection.offsetTop - 100) {
+    if (
+        scrollPosition >= aboutSection.offsetTop - 100 &&
+        scrollPosition < projectsSection.offsetTop - 100
+    ) {
         aboutLink.classList.add("active");
         projectsLink.classList.remove("active");
         contactLink.classList.remove("active");
-    } else if (scrollPosition >= projectsSection.offsetTop - 100 && scrollPosition < contactSection.offsetTop - 100) {
+    } else if (
+        scrollPosition >= projectsSection.offsetTop - 100 &&
+        scrollPosition < contactSection.offsetTop - 100
+    ) {
         projectsLink.classList.add("active");
         aboutLink.classList.remove("active");
         contactLink.classList.remove("active");
@@ -80,5 +87,3 @@ window.addEventListener("scroll", function () {
         projectsLink.classList.remove("active");
     }
 });
-
-
