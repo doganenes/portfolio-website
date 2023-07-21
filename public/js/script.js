@@ -5,6 +5,7 @@ let link4 = "https://personal-portfolio-website-project.netlify.app/";
 let link5 = "https://doganenes.github.io/quiz-app/";
 let link6 = "https://filter-search-app-livedemo.netlify.app/";
 
+let card1 = document.querySelector(".card-1");
 let card2 = document.querySelector(".card-2");
 let card3 = document.querySelector(".card-3");
 let card4 = document.querySelector(".card-4");
@@ -14,6 +15,9 @@ let card6 = document.querySelector(".card-6");
 const menuBtn = document.querySelector(".menu-btn");
 let menuOpen = false;
 
+card1.addEventListener("click", () => {
+    window.open(link1);
+});
 card2.addEventListener("click", () => {
     window.open(link2);
 });
