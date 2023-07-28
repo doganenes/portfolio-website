@@ -15,6 +15,23 @@
 ![contact](https://github.com/doganenes/quiz-app/assets/86846812/8daf5da2-ef5e-4d2d-9755-91d27e758a75)
 
 
+----
+
+To get a local copy of the code, clone it using git:
+```
+git clone https://github.com/doganenes/portolio-website-laravel.git
+cd portfolio-website-laravel
+```
+
+
+## Installation
+
+1. Clone the repo and `cd` into it
+2. Install required laravel packages: `composer install`
+3. For start the project, run this command: `php artisan serve`
+4. Visit `localhost:8000` in your browser
+
+
 # Features
 * This portfolio website was made with laravel. Portfolio website is a landing page project.
 * In the contact section of the project, the data received from the user is saved in the database.
@@ -24,14 +41,3 @@
 * In database, the id value is taken as the primary key as auto_increment. The user's name, email, subject and message data are retrieved. In addition, the time period when the contact form is submitted is also recorded in the database.
 
 ![testmessagesql](https://github.com/doganenes/quiz-app/assets/86846812/ea5b9dfb-702c-49ec-ae8e-347d7cc63771)
-
-----
-
-To get a local copy of the code, clone it using git:
-```
-git clone https://github.com/doganenes/portolio-website-laravel.git
-cd portfolio-website-laravel
-```
-
-For start the project, run this command:
-`php artisan serve`
